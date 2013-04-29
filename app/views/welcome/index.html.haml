@@ -1,0 +1,13 @@
+.row
+  .span3
+  .span6
+    %h3 Googler
+    .search_form
+      = form_tag do
+        = text_area_tag 'Search', nil, :class => 'search_box'
+        = label_tag 'Enter 1 search item per line, then hit enter to Google them all'
+        = submit_tag 'Googler', :id => 'googler'
+
+
+
+  .span3
