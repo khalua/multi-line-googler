@@ -2,12 +2,13 @@
   .span3
   .span6
     %h3 Googler
+    %p Instructions: Open a new Chrome window with this site, paste in a list of items in the search box below, press Go.
+    %p For each line in the list, a new Google search will happen in a new tab. Huzzah!
     .search_form
       = form_tag do
         = text_area_tag 'Search', nil, :class => 'search_box'
-        = label_tag 'Enter 1 search item per line, then hit enter to Google them all'
-        = submit_tag 'Googler', :id => 'googler'
+        = submit_tag 'Go', :id => 'googler'
 
-
-
+    %p Works with Chrome on a Mac. Other combinations, not so sure.
+    = link_to('Github', 'https://github.com/khalua/multi-line-googler')
   .span3
